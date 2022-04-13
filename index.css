@@ -1,0 +1,46 @@
+#searchBox{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+    height:100%;
+    font-size:50px;
+}
+#searchBar{
+    display:flex;
+    width:80%;
+    justify-content: space-around;
+    align-items: baseline;
+}
+#searchBar input{
+    margin-top:5%;
+    width:60%;
+    height:40px;
+    text-align:center;
+    font-size:30px;
+    border-radius:40px;
+    outline:none;
+}
+#searchBtn{
+    width:100px;
+    height:40px;
+}
+#container
+{
+    padding-top:10px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    width:60%;
+    height:70%;
+    overflow-y:scroll;
+}
+.queryResults p
+{
+    height:400px;
+    font-size:10px;
+}
+.paraText
+{
+    font-size:20px;
+}
