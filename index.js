@@ -16,6 +16,7 @@ async function getTextQuery() {
   }
   query = query.split(" ");
   query = query.join("+");
+  container.textContent = "Loading...";
   try {
     let res = await fetch(
       `https://google-search3.p.rapidapi.com/api/v1/search/q=${query}`,
@@ -46,6 +47,7 @@ async function getVideoQuery() {
   }
   query = query.split(" ");
   query = query.join("+");
+  container.textContent = "Loading...";
   try {
     let res = await fetch(
       `https://google-search3.p.rapidapi.com/api/v1/video/q=${query}`,
