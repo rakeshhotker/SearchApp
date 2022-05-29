@@ -16,7 +16,7 @@ async function getTextQuery() {
   }
   query = query.split(" ");
   query = query.join("+");
-  container.textContent = "Loading...";
+  container.innerHTML = `<div class="spinner-grow" role="status"><span class="visually-hidden">Loading...</span><div>`;
   try {
     let res = await fetch(
       `https://google-search3.p.rapidapi.com/api/v1/search/q=${query}`,
